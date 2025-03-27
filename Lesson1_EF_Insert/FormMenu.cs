@@ -30,5 +30,10 @@ namespace Lesson1_EF_Insert
             frmSiniflar.MdiParent = this;
             frmSiniflar.Show();
         }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

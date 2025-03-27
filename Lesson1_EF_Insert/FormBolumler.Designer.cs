@@ -35,9 +35,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButtonSinifEkle = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonSinifGuncelle = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonSinifSil = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonBolumEkle = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonBolumGuncelle = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonBolumSil = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonTemizle = new System.Windows.Forms.ToolStripButton();
             this.textBoxAciklama = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -94,9 +94,9 @@
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButtonSinifEkle,
-            this.toolStripButtonSinifGuncelle,
-            this.toolStripButtonSinifSil,
+            this.toolStripButtonBolumEkle,
+            this.toolStripButtonBolumGuncelle,
+            this.toolStripButtonBolumSil,
             this.toolStripButtonTemizle});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -104,32 +104,32 @@
             this.toolStrip1.TabIndex = 8;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButtonSinifEkle
+            // toolStripButtonBolumEkle
             // 
-            this.toolStripButtonSinifEkle.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSinifEkle.Image")));
-            this.toolStripButtonSinifEkle.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonSinifEkle.Name = "toolStripButtonSinifEkle";
-            this.toolStripButtonSinifEkle.Size = new System.Drawing.Size(48, 22);
-            this.toolStripButtonSinifEkle.Text = "Ekle";
-            this.toolStripButtonSinifEkle.Click += new System.EventHandler(this.toolStripButtonSinifEkle_Click);
+            this.toolStripButtonBolumEkle.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonBolumEkle.Image")));
+            this.toolStripButtonBolumEkle.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonBolumEkle.Name = "toolStripButtonBolumEkle";
+            this.toolStripButtonBolumEkle.Size = new System.Drawing.Size(48, 22);
+            this.toolStripButtonBolumEkle.Text = "Ekle";
+            this.toolStripButtonBolumEkle.Click += new System.EventHandler(this.toolStripButtonBolumEkle_Click);
             // 
-            // toolStripButtonSinifGuncelle
+            // toolStripButtonBolumGuncelle
             // 
-            this.toolStripButtonSinifGuncelle.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSinifGuncelle.Image")));
-            this.toolStripButtonSinifGuncelle.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonSinifGuncelle.Name = "toolStripButtonSinifGuncelle";
-            this.toolStripButtonSinifGuncelle.Size = new System.Drawing.Size(73, 22);
-            this.toolStripButtonSinifGuncelle.Text = "Güncelle";
-            this.toolStripButtonSinifGuncelle.Click += new System.EventHandler(this.toolStripButtonSinifGuncelle_Click);
+            this.toolStripButtonBolumGuncelle.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonBolumGuncelle.Image")));
+            this.toolStripButtonBolumGuncelle.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonBolumGuncelle.Name = "toolStripButtonBolumGuncelle";
+            this.toolStripButtonBolumGuncelle.Size = new System.Drawing.Size(73, 22);
+            this.toolStripButtonBolumGuncelle.Text = "Güncelle";
+            this.toolStripButtonBolumGuncelle.Click += new System.EventHandler(this.toolStripButtonBolumGuncelle_Click);
             // 
-            // toolStripButtonSinifSil
+            // toolStripButtonBolumSil
             // 
-            this.toolStripButtonSinifSil.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonSinifSil.Image")));
-            this.toolStripButtonSinifSil.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonSinifSil.Name = "toolStripButtonSinifSil";
-            this.toolStripButtonSinifSil.Size = new System.Drawing.Size(39, 22);
-            this.toolStripButtonSinifSil.Text = "Sil";
-            this.toolStripButtonSinifSil.Click += new System.EventHandler(this.toolStripButtonSinifSil_Click);
+            this.toolStripButtonBolumSil.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonBolumSil.Image")));
+            this.toolStripButtonBolumSil.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonBolumSil.Name = "toolStripButtonBolumSil";
+            this.toolStripButtonBolumSil.Size = new System.Drawing.Size(39, 22);
+            this.toolStripButtonBolumSil.Text = "Sil";
+            this.toolStripButtonBolumSil.Click += new System.EventHandler(this.toolStripButtonBolumSil_Click);
             // 
             // toolStripButtonTemizle
             // 
@@ -212,9 +212,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButtonSinifEkle;
-        private System.Windows.Forms.ToolStripButton toolStripButtonSinifGuncelle;
-        private System.Windows.Forms.ToolStripButton toolStripButtonSinifSil;
+        private System.Windows.Forms.ToolStripButton toolStripButtonBolumEkle;
+        private System.Windows.Forms.ToolStripButton toolStripButtonBolumGuncelle;
+        private System.Windows.Forms.ToolStripButton toolStripButtonBolumSil;
         private System.Windows.Forms.ToolStripButton toolStripButtonTemizle;
         private System.Windows.Forms.TextBox textBoxAciklama;
         private System.Windows.Forms.Label label3;

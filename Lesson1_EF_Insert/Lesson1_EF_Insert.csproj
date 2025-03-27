@@ -101,6 +101,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>YazilimKursuDB.xsd</DependentUpon>
     </Compile>
+    <Compile Include="YazilimKursuDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YazilimKursuDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="YazilimKursuDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>YazilimKursuDBDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormBolumler.resx">
       <DependentUpon>FormBolumler.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,6 +156,28 @@
     </None>
     <None Include="YazilimKursuDB.xss">
       <DependentUpon>YazilimKursuDB.xsd</DependentUpon>
+    </None>
+    <None Include="YazilimKursuDBDataSet.xsc">
+      <DependentUpon>YazilimKursuDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="YazilimKursuDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YazilimKursuDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YazilimKursuDBDataSet.xss">
+      <DependentUpon>YazilimKursuDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="YazilimKursuDBDataSet1.xsc">
+      <DependentUpon>YazilimKursuDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="YazilimKursuDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>YazilimKursuDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="YazilimKursuDBDataSet1.xss">
+      <DependentUpon>YazilimKursuDBDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -31,7 +31,7 @@ namespace Lesson1_EF_Insert
        
 
 
-        private void Temizle()
+        public void Temizle()
         {
             dataGridView1.DataSource = db.Bolumler.Where(k => k.IsActive == true).ToList();
 
@@ -52,7 +52,7 @@ namespace Lesson1_EF_Insert
 
         
 
-        private void toolStripButtonSinifEkle_Click(object sender, EventArgs e)
+        private void toolStripButtonBolumEkle_Click(object sender, EventArgs e)
         {
             try
             {
@@ -111,7 +111,7 @@ namespace Lesson1_EF_Insert
             }
         }
 
-        private void toolStripButtonSinifGuncelle_Click(object sender, EventArgs e)
+        private void toolStripButtonBolumGuncelle_Click(object sender, EventArgs e)
         {
             if (bolumId > 0)
             {
@@ -151,7 +151,7 @@ namespace Lesson1_EF_Insert
             }
         }
 
-        private void toolStripButtonSinifSil_Click(object sender, EventArgs e)
+        private void toolStripButtonBolumSil_Click(object sender, EventArgs e)
         {
             if (bolumId == 0)
             {

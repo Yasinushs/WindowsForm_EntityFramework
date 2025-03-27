@@ -20,9 +20,9 @@ namespace Lesson1_EF_Insert {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("YazilimKursuDB")]
+    [global::System.Xml.Serialization.XmlRootAttribute("YazilimKursuDBDataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class YazilimKursuDB : global::System.Data.DataSet {
+    public partial class YazilimKursuDBDataSet1 : global::System.Data.DataSet {
         
         private BolumlerDataTable tableBolumler;
         
@@ -32,7 +32,7 @@ namespace Lesson1_EF_Insert {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public YazilimKursuDB() {
+        public YazilimKursuDBDataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -43,7 +43,7 @@ namespace Lesson1_EF_Insert {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected YazilimKursuDB(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected YazilimKursuDBDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -142,7 +142,7 @@ namespace Lesson1_EF_Insert {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            YazilimKursuDB cln = ((YazilimKursuDB)(base.Clone()));
+            YazilimKursuDBDataSet1 cln = ((YazilimKursuDBDataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -223,9 +223,9 @@ namespace Lesson1_EF_Insert {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "YazilimKursuDB";
+            this.DataSetName = "YazilimKursuDBDataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/YazilimKursuDB.xsd";
+            this.Namespace = "http://tempuri.org/YazilimKursuDBDataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableBolumler = new BolumlerDataTable();
@@ -257,7 +257,7 @@ namespace Lesson1_EF_Insert {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            YazilimKursuDB ds = new YazilimKursuDB();
+            YazilimKursuDBDataSet1 ds = new YazilimKursuDBDataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -555,7 +555,7 @@ namespace Lesson1_EF_Insert {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                YazilimKursuDB ds = new YazilimKursuDB();
+                YazilimKursuDBDataSet1 ds = new YazilimKursuDBDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -625,13 +625,13 @@ namespace Lesson1_EF_Insert {
             
             private global::System.Data.DataColumn columnSinifAdi;
             
+            private global::System.Data.DataColumn columnBolumu;
+            
             private global::System.Data.DataColumn columnBolumId;
             
             private global::System.Data.DataColumn columnAciklama;
             
             private global::System.Data.DataColumn columnEgitmenId;
-            
-            private global::System.Data.DataColumn columnBolumu;
             
             private global::System.Data.DataColumn columnİsActive;
             
@@ -686,6 +686,14 @@ namespace Lesson1_EF_Insert {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn BolumuColumn {
+                get {
+                    return this.columnBolumu;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public global::System.Data.DataColumn BolumIdColumn {
                 get {
                     return this.columnBolumId;
@@ -705,14 +713,6 @@ namespace Lesson1_EF_Insert {
             public global::System.Data.DataColumn EgitmenIdColumn {
                 get {
                     return this.columnEgitmenId;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn BolumuColumn {
-                get {
-                    return this.columnBolumu;
                 }
             }
             
@@ -761,15 +761,15 @@ namespace Lesson1_EF_Insert {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public SiniflarRow AddSiniflarRow(string SinifAdi, int BolumId, string Aciklama, int EgitmenId, string Bolumu, bool İsActive) {
+            public SiniflarRow AddSiniflarRow(string SinifAdi, string Bolumu, int BolumId, string Aciklama, int EgitmenId, bool İsActive) {
                 SiniflarRow rowSiniflarRow = ((SiniflarRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         SinifAdi,
+                        Bolumu,
                         BolumId,
                         Aciklama,
                         EgitmenId,
-                        Bolumu,
                         İsActive};
                 rowSiniflarRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSiniflarRow);
@@ -802,10 +802,10 @@ namespace Lesson1_EF_Insert {
             internal void InitVars() {
                 this.columnSiniflarId = base.Columns["SiniflarId"];
                 this.columnSinifAdi = base.Columns["SinifAdi"];
+                this.columnBolumu = base.Columns["Bolumu"];
                 this.columnBolumId = base.Columns["BolumId"];
                 this.columnAciklama = base.Columns["Aciklama"];
                 this.columnEgitmenId = base.Columns["EgitmenId"];
-                this.columnBolumu = base.Columns["Bolumu"];
                 this.columnİsActive = base.Columns["İsActive"];
             }
             
@@ -816,14 +816,14 @@ namespace Lesson1_EF_Insert {
                 base.Columns.Add(this.columnSiniflarId);
                 this.columnSinifAdi = new global::System.Data.DataColumn("SinifAdi", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSinifAdi);
+                this.columnBolumu = new global::System.Data.DataColumn("Bolumu", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBolumu);
                 this.columnBolumId = new global::System.Data.DataColumn("BolumId", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnBolumId);
                 this.columnAciklama = new global::System.Data.DataColumn("Aciklama", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAciklama);
                 this.columnEgitmenId = new global::System.Data.DataColumn("EgitmenId", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnEgitmenId);
-                this.columnBolumu = new global::System.Data.DataColumn("Bolumu", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBolumu);
                 this.columnİsActive = new global::System.Data.DataColumn("İsActive", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnİsActive);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
@@ -836,11 +836,10 @@ namespace Lesson1_EF_Insert {
                 this.columnSiniflarId.Unique = true;
                 this.columnSinifAdi.AllowDBNull = false;
                 this.columnSinifAdi.MaxLength = 150;
+                this.columnBolumu.MaxLength = 50;
                 this.columnBolumId.AllowDBNull = false;
-                this.columnAciklama.AllowDBNull = false;
                 this.columnAciklama.MaxLength = 2147483647;
                 this.columnEgitmenId.AllowDBNull = false;
-                this.columnBolumu.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -908,7 +907,7 @@ namespace Lesson1_EF_Insert {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                YazilimKursuDB ds = new YazilimKursuDB();
+                YazilimKursuDBDataSet1 ds = new YazilimKursuDBDataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1081,6 +1080,22 @@ namespace Lesson1_EF_Insert {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Bolumu {
+                get {
+                    try {
+                        return ((string)(this[this.tableSiniflar.BolumuColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Bolumu\' in table \'Siniflar\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSiniflar.BolumuColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int BolumId {
                 get {
                     return ((int)(this[this.tableSiniflar.BolumIdColumn]));
@@ -1094,7 +1109,12 @@ namespace Lesson1_EF_Insert {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public string Aciklama {
                 get {
-                    return ((string)(this[this.tableSiniflar.AciklamaColumn]));
+                    try {
+                        return ((string)(this[this.tableSiniflar.AciklamaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Aciklama\' in table \'Siniflar\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableSiniflar.AciklamaColumn] = value;
@@ -1109,22 +1129,6 @@ namespace Lesson1_EF_Insert {
                 }
                 set {
                     this[this.tableSiniflar.EgitmenIdColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Bolumu {
-                get {
-                    try {
-                        return ((string)(this[this.tableSiniflar.BolumuColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Bolumu\' in table \'Siniflar\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableSiniflar.BolumuColumn] = value;
                 }
             }
             
@@ -1154,6 +1158,18 @@ namespace Lesson1_EF_Insert {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetBolumuNull() {
                 this[this.tableSiniflar.BolumuColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsAciklamaNull() {
+                return this.IsNull(this.tableSiniflar.AciklamaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetAciklamaNull() {
+                this[this.tableSiniflar.AciklamaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1238,7 +1254,7 @@ namespace Lesson1_EF_Insert {
         }
     }
 }
-namespace Lesson1_EF_Insert.YazilimKursuDBTableAdapters {
+namespace Lesson1_EF_Insert.YazilimKursuDBDataSet1TableAdapters {
     
     
     /// <summary>
@@ -1424,7 +1440,7 @@ SELECT BolumlerId, BolumAdi, Kontejan, IsActive FROM Bolumler WHERE (BolumlerId 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(YazilimKursuDB.BolumlerDataTable dataTable) {
+        public virtual int Fill(YazilimKursuDBDataSet1.BolumlerDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1437,9 +1453,9 @@ SELECT BolumlerId, BolumAdi, Kontejan, IsActive FROM Bolumler WHERE (BolumlerId 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual YazilimKursuDB.BolumlerDataTable GetData() {
+        public virtual YazilimKursuDBDataSet1.BolumlerDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            YazilimKursuDB.BolumlerDataTable dataTable = new YazilimKursuDB.BolumlerDataTable();
+            YazilimKursuDBDataSet1.BolumlerDataTable dataTable = new YazilimKursuDBDataSet1.BolumlerDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1447,14 +1463,14 @@ SELECT BolumlerId, BolumAdi, Kontejan, IsActive FROM Bolumler WHERE (BolumlerId 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(YazilimKursuDB.BolumlerDataTable dataTable) {
+        public virtual int Update(YazilimKursuDBDataSet1.BolumlerDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(YazilimKursuDB dataSet) {
+        public virtual int Update(YazilimKursuDBDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "Bolumler");
         }
         
@@ -1727,52 +1743,52 @@ SELECT BolumlerId, BolumAdi, Kontejan, IsActive FROM Bolumler WHERE (BolumlerId 
             tableMapping.DataSetTable = "Siniflar";
             tableMapping.ColumnMappings.Add("SiniflarId", "SiniflarId");
             tableMapping.ColumnMappings.Add("SinifAdi", "SinifAdi");
+            tableMapping.ColumnMappings.Add("Bolumu", "Bolumu");
             tableMapping.ColumnMappings.Add("BolumId", "BolumId");
             tableMapping.ColumnMappings.Add("Aciklama", "Aciklama");
             tableMapping.ColumnMappings.Add("EgitmenId", "EgitmenId");
-            tableMapping.ColumnMappings.Add("Bolumu", "Bolumu");
             tableMapping.ColumnMappings.Add("İsActive", "İsActive");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [Siniflar] WHERE (([SiniflarId] = @Original_SiniflarId) AND ([SinifAdi] = @Original_SinifAdi) AND ([BolumId] = @Original_BolumId) AND ([EgitmenId] = @Original_EgitmenId) AND ((@IsNull_Bolumu = 1 AND [Bolumu] IS NULL) OR ([Bolumu] = @Original_Bolumu)) AND ((@IsNull_İsActive = 1 AND [İsActive] IS NULL) OR ([İsActive] = @Original_İsActive)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Siniflar] WHERE (([SiniflarId] = @Original_SiniflarId) AND ([SinifAdi] = @Original_SinifAdi) AND ((@IsNull_Bolumu = 1 AND [Bolumu] IS NULL) OR ([Bolumu] = @Original_Bolumu)) AND ([BolumId] = @Original_BolumId) AND ([EgitmenId] = @Original_EgitmenId) AND ((@IsNull_İsActive = 1 AND [İsActive] IS NULL) OR ([İsActive] = @Original_İsActive)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SiniflarId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SiniflarId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SinifAdi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SinifAdi", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_BolumId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BolumId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_EgitmenId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EgitmenId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Bolumu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Bolumu", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Bolumu", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Bolumu", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_BolumId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BolumId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_EgitmenId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EgitmenId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_İsActive", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İsActive", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_İsActive", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İsActive", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Siniflar] ([SinifAdi], [BolumId], [Aciklama], [EgitmenId], [Bolumu], [İsActive]) VALUES (@SinifAdi, @BolumId, @Aciklama, @EgitmenId, @Bolumu, @İsActive);
-SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FROM Siniflar WHERE (SiniflarId = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Siniflar] ([SinifAdi], [Bolumu], [BolumId], [Aciklama], [EgitmenId], [İsActive]) VALUES (@SinifAdi, @Bolumu, @BolumId, @Aciklama, @EgitmenId, @İsActive);
+SELECT SiniflarId, SinifAdi, Bolumu, BolumId, Aciklama, EgitmenId, İsActive FROM Siniflar WHERE (SiniflarId = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SinifAdi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SinifAdi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Bolumu", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Bolumu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BolumId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BolumId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Aciklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Aciklama", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EgitmenId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EgitmenId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Bolumu", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Bolumu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@İsActive", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İsActive", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [Siniflar] SET [SinifAdi] = @SinifAdi, [BolumId] = @BolumId, [Aciklama] = @Aciklama, [EgitmenId] = @EgitmenId, [Bolumu] = @Bolumu, [İsActive] = @İsActive WHERE (([SiniflarId] = @Original_SiniflarId) AND ([SinifAdi] = @Original_SinifAdi) AND ([BolumId] = @Original_BolumId) AND ([EgitmenId] = @Original_EgitmenId) AND ((@IsNull_Bolumu = 1 AND [Bolumu] IS NULL) OR ([Bolumu] = @Original_Bolumu)) AND ((@IsNull_İsActive = 1 AND [İsActive] IS NULL) OR ([İsActive] = @Original_İsActive)));
-SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FROM Siniflar WHERE (SiniflarId = @SiniflarId)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Siniflar] SET [SinifAdi] = @SinifAdi, [Bolumu] = @Bolumu, [BolumId] = @BolumId, [Aciklama] = @Aciklama, [EgitmenId] = @EgitmenId, [İsActive] = @İsActive WHERE (([SiniflarId] = @Original_SiniflarId) AND ([SinifAdi] = @Original_SinifAdi) AND ((@IsNull_Bolumu = 1 AND [Bolumu] IS NULL) OR ([Bolumu] = @Original_Bolumu)) AND ([BolumId] = @Original_BolumId) AND ([EgitmenId] = @Original_EgitmenId) AND ((@IsNull_İsActive = 1 AND [İsActive] IS NULL) OR ([İsActive] = @Original_İsActive)));
+SELECT SiniflarId, SinifAdi, Bolumu, BolumId, Aciklama, EgitmenId, İsActive FROM Siniflar WHERE (SiniflarId = @SiniflarId)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SinifAdi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SinifAdi", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Bolumu", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Bolumu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BolumId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BolumId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Aciklama", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Aciklama", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EgitmenId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EgitmenId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Bolumu", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Bolumu", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@İsActive", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İsActive", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SiniflarId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SiniflarId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SinifAdi", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SinifAdi", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_BolumId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BolumId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_EgitmenId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EgitmenId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Bolumu", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Bolumu", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Bolumu", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Bolumu", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_BolumId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BolumId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_EgitmenId", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "EgitmenId", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_İsActive", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İsActive", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_İsActive", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "İsActive", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SiniflarId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "SiniflarId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1791,8 +1807,8 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FROM " +
-                "Siniflar";
+            this._commandCollection[0].CommandText = "SELECT SiniflarId, SinifAdi, Bolumu, BolumId, Aciklama, EgitmenId, İsActive FROM " +
+                "dbo.Siniflar";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1800,7 +1816,7 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(YazilimKursuDB.SiniflarDataTable dataTable) {
+        public virtual int Fill(YazilimKursuDBDataSet1.SiniflarDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1813,9 +1829,9 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual YazilimKursuDB.SiniflarDataTable GetData() {
+        public virtual YazilimKursuDBDataSet1.SiniflarDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            YazilimKursuDB.SiniflarDataTable dataTable = new YazilimKursuDB.SiniflarDataTable();
+            YazilimKursuDBDataSet1.SiniflarDataTable dataTable = new YazilimKursuDBDataSet1.SiniflarDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1823,14 +1839,14 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(YazilimKursuDB.SiniflarDataTable dataTable) {
+        public virtual int Update(YazilimKursuDBDataSet1.SiniflarDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(YazilimKursuDB dataSet) {
+        public virtual int Update(YazilimKursuDBDataSet1 dataSet) {
             return this.Adapter.Update(dataSet, "Siniflar");
         }
         
@@ -1853,7 +1869,7 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_SiniflarId, string Original_SinifAdi, int Original_BolumId, int Original_EgitmenId, string Original_Bolumu, global::System.Nullable<bool> Original_İsActive) {
+        public virtual int Delete(int Original_SiniflarId, string Original_SinifAdi, string Original_Bolumu, int Original_BolumId, int Original_EgitmenId, global::System.Nullable<bool> Original_İsActive) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_SiniflarId));
             if ((Original_SinifAdi == null)) {
                 throw new global::System.ArgumentNullException("Original_SinifAdi");
@@ -1861,16 +1877,16 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_SinifAdi));
             }
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_BolumId));
-            this.Adapter.DeleteCommand.Parameters[3].Value = ((int)(Original_EgitmenId));
             if ((Original_Bolumu == null)) {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[5].Value = global::System.DBNull.Value;
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((string)(Original_Bolumu));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_Bolumu));
             }
+            this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_BolumId));
+            this.Adapter.DeleteCommand.Parameters[5].Value = ((int)(Original_EgitmenId));
             if ((Original_İsActive.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((bool)(Original_İsActive.Value));
@@ -1899,27 +1915,27 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string SinifAdi, int BolumId, string Aciklama, int EgitmenId, string Bolumu, global::System.Nullable<bool> İsActive) {
+        public virtual int Insert(string SinifAdi, string Bolumu, int BolumId, string Aciklama, int EgitmenId, global::System.Nullable<bool> İsActive) {
             if ((SinifAdi == null)) {
                 throw new global::System.ArgumentNullException("SinifAdi");
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(SinifAdi));
             }
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(BolumId));
-            if ((Aciklama == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Aciklama));
-            }
-            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(EgitmenId));
             if ((Bolumu == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Bolumu));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Bolumu));
             }
+            this.Adapter.InsertCommand.Parameters[2].Value = ((int)(BolumId));
+            if ((Aciklama == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Aciklama));
+            }
+            this.Adapter.InsertCommand.Parameters[4].Value = ((int)(EgitmenId));
             if ((İsActive.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[5].Value = ((bool)(İsActive.Value));
             }
@@ -1946,27 +1962,27 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string SinifAdi, int BolumId, string Aciklama, int EgitmenId, string Bolumu, global::System.Nullable<bool> İsActive, int Original_SiniflarId, string Original_SinifAdi, int Original_BolumId, int Original_EgitmenId, string Original_Bolumu, global::System.Nullable<bool> Original_İsActive, int SiniflarId) {
+        public virtual int Update(string SinifAdi, string Bolumu, int BolumId, string Aciklama, int EgitmenId, global::System.Nullable<bool> İsActive, int Original_SiniflarId, string Original_SinifAdi, string Original_Bolumu, int Original_BolumId, int Original_EgitmenId, global::System.Nullable<bool> Original_İsActive, int SiniflarId) {
             if ((SinifAdi == null)) {
                 throw new global::System.ArgumentNullException("SinifAdi");
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(SinifAdi));
             }
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(BolumId));
-            if ((Aciklama == null)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Aciklama));
-            }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(EgitmenId));
             if ((Bolumu == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Bolumu));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Bolumu));
             }
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(BolumId));
+            if ((Aciklama == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Aciklama));
+            }
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(EgitmenId));
             if ((İsActive.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((bool)(İsActive.Value));
             }
@@ -1980,16 +1996,16 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
             else {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_SinifAdi));
             }
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_BolumId));
-            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_EgitmenId));
             if ((Original_Bolumu == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_Bolumu));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_Bolumu));
             }
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_BolumId));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_EgitmenId));
             if ((Original_İsActive.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[13].Value = ((bool)(Original_İsActive.Value));
@@ -2019,8 +2035,8 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string SinifAdi, int BolumId, string Aciklama, int EgitmenId, string Bolumu, global::System.Nullable<bool> İsActive, int Original_SiniflarId, string Original_SinifAdi, int Original_BolumId, int Original_EgitmenId, string Original_Bolumu, global::System.Nullable<bool> Original_İsActive) {
-            return this.Update(SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive, Original_SiniflarId, Original_SinifAdi, Original_BolumId, Original_EgitmenId, Original_Bolumu, Original_İsActive, Original_SiniflarId);
+        public virtual int Update(string SinifAdi, string Bolumu, int BolumId, string Aciklama, int EgitmenId, global::System.Nullable<bool> İsActive, int Original_SiniflarId, string Original_SinifAdi, string Original_Bolumu, int Original_BolumId, int Original_EgitmenId, global::System.Nullable<bool> Original_İsActive) {
+            return this.Update(SinifAdi, Bolumu, BolumId, Aciklama, EgitmenId, İsActive, Original_SiniflarId, Original_SinifAdi, Original_Bolumu, Original_BolumId, Original_EgitmenId, Original_İsActive, Original_SiniflarId);
         }
     }
     
@@ -2138,7 +2154,7 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(YazilimKursuDB dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(YazilimKursuDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._bolumlerTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.Bolumler.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -2166,7 +2182,7 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(YazilimKursuDB dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(YazilimKursuDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._bolumlerTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.Bolumler.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -2192,7 +2208,7 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(YazilimKursuDB dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(YazilimKursuDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._siniflarTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.Siniflar.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -2242,7 +2258,7 @@ SELECT SiniflarId, SinifAdi, BolumId, Aciklama, EgitmenId, Bolumu, İsActive FRO
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(YazilimKursuDB dataSet) {
+        public virtual int UpdateAll(YazilimKursuDBDataSet1 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
